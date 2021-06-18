@@ -1,6 +1,6 @@
 {
   "name": "hexo-butterfly-envelope",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A commentsbar beautify plugin for theme-butterfly",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
     "pug": "^3.0.0"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Akilarlxh/hexo-butterfly-envelop.git"
+    "type": "git",
+    "url": "https://github.com/Akilarlxh/hexo-butterfly-envelop.git"
   }
 }
