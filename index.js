@@ -5,7 +5,7 @@ const path = require('path')
 const urlFor = require('hexo-util').url_for.bind(hexo)
 const util = require('hexo-util')
 hexo.extend.generator.register('comments', function (locals) {
-  const config = hexo.config.envelope_comment ? hexo.config.envelope_comment : hexo.theme.config.envelope_comment
+  const config = hexo.config.envelope_comment || hexo.theme.config.envelope_comment
 
   if (!(config && config.enable)) return
 
