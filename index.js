@@ -11,7 +11,7 @@ hexo.extend.generator.register('comments', function (locals) {
 
   const data = {
     author: hexo.config.author,
-    cover: config.cover ? urlFor(config.cover) : "https://ae01.alicdn.com/kf/U5bb04af32be544c4b41206d9a42fcacfd.jpg",
+    cover: config.cover ? urlFor(config.cover) : "https://unpkg.zhimg.com/hexo-butterfly-fcircle/lib/violet.jpg",
     message: config.message ?  config.message : ["有什么想问的？","有什么想说的？","有什么想吐槽的？","哪怕是有什么想吃的，都可以告诉我哦~"],
     bottom: config.bottom ? config.bottom : "自动书记人偶竭诚为您服务",
     height: config.height ? config.height : "1050px"

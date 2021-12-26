@@ -17,7 +17,7 @@
     # see https://akilar.top/posts/e2d3c450/
     envelope_comment:
       enable: true #控制开关
-      cover: https://ae01.alicdn.com/kf/U5bb04af32be544c4b41206d9a42fcacfd.jpg #信笺头部图片
+      cover: https://unpkg.zhimg.com/hexo-butterfly-fcircle/lib/violet.jpg #信笺头部图片
       message: #信笺正文，多行文本，写法如下
         - 有什么想问的？
         - 有什么想说的？
@@ -42,4 +42,4 @@
   |path|comments|【可选】comments 的路径名称。默认为 comments，生成的页面为 comments/index.html|
   |front_matter|object|【可选】comments页面的 front_matter 配置,写法见上文示例|
 # 截图
-![](https://cdn.jsdelivr.net/npm/akilar-candyassets/A7DXgfwFJujLCzE.png)
+![](https://unpkg.zhimg.com/hexo-butterfly-fcircle/lib/violet.jpg)
