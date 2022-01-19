@@ -129,19 +129,19 @@ style.
   }
 #maincontent
   #form-wrap
-    img#beforeimg(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/before.png')
+    img#beforeimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/before.png')
     #envelope
       form
         .formmain
-          img.headerimg(src=cover)
+          img.headerimg.no-lightbox(src=cover)
           .comments-main
             h3.title3 来自#{author}的留言:
             .comments
               each i in message
                 div=`${i}`
             .bottomcontent
-              img.bottomimg(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png')
+              img.bottomimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png')
             p.bottomhr=`${bottom}`
-    img#afterimg(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/after.png')
+    img#afterimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/after.png')
 
   
