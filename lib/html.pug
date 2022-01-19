@@ -1,14 +1,10 @@
 style.
-  .formmain{
-    pointer-events: none !important;
-  }
   @media screen and (max-width: 600px) {
     #beforeimg,
     #afterimg{
       display: none !important;
     }
   }
-
   @media screen and (min-width: 600px) {
     #article-container img {
       margin: 0 auto 0rem;
@@ -25,7 +21,6 @@ style.
       height: #{height};
       top: -200px;
     }
-
     #beforeimg {
       position: absolute;
       bottom: 126px;
@@ -62,12 +57,6 @@ style.
       margin: 20px auto 0;
     }
 
-    .headerimg {
-      width: 100%;
-      overflow: hidden;
-      pointer-events: none;
-    }
-
     .formmain {
       background: white;
       width: 95%;
@@ -79,43 +68,6 @@ style.
       -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.12);
       box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.18);
     }
-  }
-  .title3 {
-    text-decoration: none;
-    color: $theme-color;
-    text-align: center;
-  }
-
-  .comments {
-    text-align: center;
-    border-bottom: #ddd 1px solid;
-    border-left: #ddd 1px solid;
-    padding-bottom: 20px;
-    background-color: #eee;
-    margin: 15px 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-top: #ddd 1px solid;
-    border-right: #ddd 1px solid;
-    padding-top: 20px;
-  }
-
-  .bottomcontent {
-    text-align: center;
-    margin-top: 40px;
-  }
-
-  .bottomimg {
-    width: 100%;
-    margin: 5px auto 5px auto;
-    display: block;
-    pointer-events: none;
-  }
-
-  .bottomhr {
-    font-size: 12px;
-    text-align: center;
-    color: #999;
   }
 
   /* 夜间模式 */
@@ -132,16 +84,16 @@ style.
     img#beforeimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/before.png')
     #envelope
       form
-        .formmain
-          img.headerimg.no-lightbox(src=cover)
+        .formmain(style="pointer-events: none;")
+          img.headerimg.no-lightbox(src=cover style="width: 100%;overflow: hidden;pointer-events: none;")
           .comments-main
-            h3.title3 来自#{author}的留言:
-            .comments
+            h3.title3(style="text-decoration: none;color: $theme-color;text-align: center;") 来自#{author}的留言:
+            .comments(style="text-align: center;border-bottom: #ddd 1px solid;border-left: #ddd 1px solid;padding-bottom: 20px;background-color: #eee;margin: 15px 0px;padding-left: 20px;padding-right: 20px;border-top: #ddd 1px solid;border-right: #ddd 1px solid;padding-top: 20px;")
               each i in message
                 div=`${i}`
-            .bottomcontent
-              img.bottomimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png')
-            p.bottomhr=`${bottom}`
+            .bottomcontent(style="text-align: center;margin-top: 40px;")
+              img.bottomimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png' style="width: 100%;margin: 5px auto 5px auto;display: block;pointer-events: none;")
+            p.bottomhr(style="font-size: 12px;text-align: center;color: #999;")=`${bottom}`
     img#afterimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/after.png')
 
   
