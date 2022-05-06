@@ -1,6 +1,6 @@
 {
   "name": "hexo-butterfly-envelope",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A commentsbar beautify plugin for theme-butterfly",
   "main": "index.js",
   "scripts": {
