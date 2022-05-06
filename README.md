@@ -17,7 +17,11 @@
     # see https://akilar.top/posts/e2d3c450/
     envelope_comment:
       enable: true #控制开关
-      cover: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+      custom_pic:      
+        cover: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/violet.jpg #信笺头部图片
+        line: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png #信笺底部图片
+        beforeimg: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/before.png # 信封前半部分
+        afterimg: https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/after.png # 信封后半部分
       message: #信笺正文，多行文本，写法如下
         - 有什么想问的？
         - 有什么想说的？
@@ -35,7 +39,10 @@
   |参数|备选值/类型|释义|
   |:--|:--|:--|
   |enable|true/false|控制开关|
-  |cover|URL|信笺头部图片链接|
+  |custom_pic.cover|URL|信笺头部图片链接|
+  |custom_pic.line|URL|信笺底部图片链接|
+  |custom_pic.beforeimg|URL|信封前半部分图片链接|
+  |custom_pic.afterimg|URL|信封后半部分图片链接|
   |message|text|信笺正文，支持多行文本，写法见上文示例|
   |bottom|text|信笺底部信息，仅支持单行文本|
   |height|1050px|默认1050px，信封划出的高度|

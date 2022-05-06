@@ -81,7 +81,7 @@ style.
   }
 #maincontent
   #form-wrap
-    img#beforeimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/before.png')
+    img#beforeimg.no-lightbox(src=beforeimg)
     #envelope
       form
         .formmain(style="pointer-events: none;")
@@ -92,8 +92,8 @@ style.
               each i in message
                 div=`${i}`
             .bottomcontent(style="text-align: center;margin-top: 40px;")
-              img.bottomimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png' style="width: 100%;margin: 5px auto 5px auto;display: block;pointer-events: none;")
+              img.bottomimg.no-lightbox(src=line style="width: 100%;margin: 5px auto 5px auto;display: block;pointer-events: none;")
             p.bottomhr(style="font-size: 12px;text-align: center;color: #999;")=`${bottom}`
-    img#afterimg.no-lightbox(src='https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/after.png')
+    img#afterimg.no-lightbox(src=afterimg)
 
   

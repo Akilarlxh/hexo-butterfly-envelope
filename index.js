@@ -11,7 +11,10 @@ hexo.extend.generator.register('comments', function (locals) {
 
   const data = {
     author: hexo.config.author,
-    cover: config.cover ? urlFor(config.cover) : "https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/violet.jpg",
+    cover: config.custom_pic.cover ? urlFor(config.cover) : "https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/violet.jpg",
+    line: config.custom_pic.line ? urlFor(config.line) : "https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/line.png",
+    beforeimg: config.custom_pic.beforeimg ? urlFor(config.beforeimg) : "https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/before.png",
+    afterimg: config.custom_pic.afterimg ? urlFor(config.afterimg) : "https://unpkg.zhimg.com/hexo-butterfly-envelope/lib/after.png",
     message: config.message ?  config.message : ["有什么想问的？","有什么想说的？","有什么想吐槽的？","哪怕是有什么想吃的，都可以告诉我哦~"],
     bottom: config.bottom ? config.bottom : "自动书记人偶竭诚为您服务",
     height: config.height ? config.height : "1050px"
